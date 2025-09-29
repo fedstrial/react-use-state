@@ -3,7 +3,7 @@ import Button from "./Button";
 import { useState } from "react";
 
 function Table() {
-    const [selectedLanguage, setActive] = useState(null);
+    const [selectedLanguage, setSelectedLanguage] = useState(null);
 
     return (
         <div className="pt-5">
@@ -12,7 +12,7 @@ function Table() {
                     <Button
                         key={language.id}
                         langname={language.title}
-                        update={() => setActive(language)}
+                        update={() => setSelectedLanguage(language)}
                         className={selectedLanguage?.title === language.title ? "btn-warning" : ""}
                     />
                 ))}
