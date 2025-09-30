@@ -18,7 +18,7 @@ function Table() {
                 ))}
             </div>
 
-            {selectedLanguage?.title && (
+            {selectedLanguage && (
                 <div className="mt-5 py-4 px-4 border radius-4 rounded">
                     <h3>{selectedLanguage.title}</h3>
                     <p>{selectedLanguage.description}</p>
